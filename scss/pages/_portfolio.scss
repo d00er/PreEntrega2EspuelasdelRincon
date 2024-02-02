@@ -1,0 +1,59 @@
+@import "../base/variables";
+
+.main_portfolio{
+    @include display_flex(column);
+    gap: 15px;
+}
+.img_portfolio{
+    div{
+        img{
+            @include align(center);
+            width: 11em;
+            height: 11em;
+            margin: 10px;
+        }
+    }
+}
+.img_carousel{
+    width:1000px;
+    height:1000px;
+}
+.cards_port{
+    @include display_flex(column);
+    @include align(center);
+    div{
+        div{
+            background-color: $azul-secundario;
+            color: $blanco;
+        }
+    }
+    gap: $smaller;
+    margin: 10px;
+}
+.accordeon_items{
+    div{
+        div{
+            color:$blanco;
+            background-color: $azul-secundario;
+            border-color: $negro;
+
+        }
+        h2{
+            color:$blanco;
+            background-color: $azul-secundario;
+        }
+        button{
+            color:$blanco;
+            background-color: $azul-secundario;
+            border-color: $negro;
+
+        }
+        button:active{
+            color:$blanco;
+            background-color: $azul-primario;
+        }
+        color:$blanco;
+        background-color: $azul-secundario;
+    }   
+    margin:10px;
+    }

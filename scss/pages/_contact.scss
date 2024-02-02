@@ -1,0 +1,39 @@
+@import "../base/variables";
+
+.contact_index{
+    padding-bottom: 40;
+}
+.contact_title{
+    @include align(center);
+    margin-top: 50px;
+    color: $celeste-primario;
+    font-size:$big;
+    font-weight: bold;
+}
+.contact_form{
+    div{
+        label{
+            font-size: $normal;
+        }
+    }
+    textarea{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    @include align(left);
+    background-color: $celeste-secundario;
+    color: $blanco;
+    border-radius: 20px;
+    padding-left:20px;
+    padding-bottom: 30px;
+
+}
+
+.input_form{
+    input{
+        width: 90%;
+        padding-right: 50px;
+        height: 40px;
+    }
+}

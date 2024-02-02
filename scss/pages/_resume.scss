@@ -1,0 +1,26 @@
+@import "../base/variables";
+
+.resume_list{
+    li{
+        font-size: $medium
+    }
+    list-style: none;
+}
+.resume_main{
+    section{
+        h2{
+            font-size: $big;
+        }
+        ul{
+            li{
+                div{
+                    font-weight:light;
+                    font-size: $smaller;
+                }
+                section{
+                    font-size: $normal;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+@import "components/navbar";
+@import "components/main";
+@import "components/footer";
+
+@import "pages/quiensoy";
+@import "pages/index";
+@import "pages/contact";
+@import "pages/resume";
+@import "pages/portfolio";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #001F54;
+    grid-area: header;
+}
+main{
+    background-color: #034078;
+    grid-area: main;
+}
+footer{
+    background-color: #0A1128;
+    grid-area: footer;
+}
+.body_index{
+    height:100vh;
+    @include display_grid(8%, 200%, 20%)
+}
+.body_qs{
+    height: 100vh;
+    display: grid;
+    @include display_grid(8%, 430%, 20%)
+}
+@media screen and (min-width:600px){
+    .body_index{
+        height: 200vh;
+        grid-template-columns: 4% 110% 10%;
+    }
+    .body_qs{
+        img{
+            width:25em;
+            height: 25em;
+            border-radius: 80px;
+        }
+    }
+    .img_portfolio{
+        div{
+            img{
+                width:12em;
+                height:12em;
+            }
+        }
+        
+    }
+    .title{
+        font-size: $BIGGER2;
+    }
+    .parrafo{
+        padding:50px;
+        font-size: $medium;
+    }
+    .sectionInd{
+        h2{
+            margin:30px;
+            font-size: $medium2;
+        }
+        a{
+            font-size: $medium2;
+
+        }
+    }
+    .body_qs{
+        img{
+            width: 18em;
+            height: 18em;
+            border-radius: 190px;
+        }
+        grid-template-rows: 8% 480% 19%;
+    }
+    .footer{
+        @include display_grid(0,0,0);
+        @include align(center);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .redes_block{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .cards_port{
+        @include display_flex(row);
+        flex-direction: row;
+        gap: 1em;
+        margin: 10px;
+        justify-content: center;
+        align-self:auto;
+    }
+}
+@media screen and (min-width:1240px){
+    .img_portfolio div img{
+        @include align(center);
+        width: 15em;
+        height: 15em;
+        margin-left: 20px;
+    }
+    .title{
+        font-size: $biggest;
+    }
+    .parrafo{
+        font-size: $medium;
+        padding: 80px;
+    }
+    .sectionInd{
+        h2{
+            font-size: $high;
+            margin: 50px;
+        }
+        a{
+            font-size: $high;
+        }
+    }
+    .body_qs{
+        img{
+            width: 20em;
+            height: 20em;
+            border-radius: 200px;
+        }
+        grid-template-rows: 8% 400% 19%;
+    }
+}

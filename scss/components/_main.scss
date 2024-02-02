@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+.main{
+    @include display_flex(column);
+    @include align(center);
+}
+.main_portfolio{
+    @include align(center);
+}
+.title{
+    @include align(center);
+    color: $celeste-primario;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: $bigger;
+}

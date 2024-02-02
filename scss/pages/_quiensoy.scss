@@ -1,0 +1,9 @@
+@import "../base/variables";
+
+.logo_img{
+    @include align(center);
+    width: 15em;
+    height: 15em;
+    border-radius: 150px;
+    padding:30px;
+}

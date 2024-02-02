@@ -1,0 +1,10 @@
+@import "../base/variables";
+
+.nav_bar{
+    background-color: $azul-secundario;
+    color: $celeste-secundario;
+}
+.button_bootstrap{
+    @include display_flex(row);
+    @include align(right);
+}

@@ -1,0 +1,44 @@
+// PALETA DE COLORES
+
+// color
+$blanco: #FEFCFB;
+$celeste-primario: #88BFCF;
+$celeste-secundario: #1282A2;
+$azul-primario: #034078;
+$azul-secundario: #001F54;
+$negro: #0A1128;
+
+// TAMAÑOS
+$biggest: 7em;
+$BIGGER2: 5em;
+$bigger: 4em;
+$big: 3.5em;
+$high: 3em;
+$medium2: 2.5em;
+$medium: 2em;
+$normal: 1.5em;
+$small: 1.2em;
+$smaller: 1em;
+
+@mixin display_flex($flex_direction){
+    display: flex;
+    flex-direction: $flex_direction;
+}
+@mixin display_grid($m_nav, $m_main, $m_foot){
+    display: grid;
+    grid-template-rows: $m_nav $m_main $m_foot;
+    
+    /*estructura con areas*/
+    grid-template-areas: 
+    "header header" 
+    "main main" 
+    "footer footer";
+}
+
+
+@mixin align($align){
+    justify-content: $align;
+    text-align: $align;
+    align-items: $align;
+}
+

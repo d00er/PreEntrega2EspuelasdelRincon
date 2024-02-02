@@ -1,0 +1,24 @@
+@import "../base/variables";
+
+.sectionInd{
+    article{
+        font-size: $medium;
+        h2{
+            font-weight: bold;
+            color: $celeste-primario;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.parrafo{
+    font-size:$normal;
+    padding: 25px;
+    color: $blanco;
+    span{
+        font-size: $small;
+        font-weight: bold;
+        color: $celeste-primario;
+    }
+}
