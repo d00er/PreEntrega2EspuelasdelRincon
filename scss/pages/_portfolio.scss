@@ -7,7 +7,6 @@
 .img_portfolio{
     div{
         img{
-            @include align(center);
             width: 11em;
             height: 11em;
             margin: 10px;
@@ -35,7 +34,7 @@
         div{
             color:$blanco;
             background-color: $azul-secundario;
-            border-color: $negro;
+            
 
         }
         h2{
@@ -46,12 +45,14 @@
             color:$blanco;
             background-color: $azul-secundario;
             border-color: $negro;
+            border: 2px $negro solid;
 
         }
         button:active{
             color:$blanco;
             background-color: $azul-primario;
         }
+        border: 2px $negro solid;
         color:$blanco;
         background-color: $azul-secundario;
     }   

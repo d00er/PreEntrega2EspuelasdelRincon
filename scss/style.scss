@@ -2,7 +2,6 @@
 @import "components/main";
 @import "components/footer";
 
-@import "pages/quiensoy";
 @import "pages/index";
 @import "pages/contact";
 @import "pages/resume";
@@ -29,24 +28,39 @@ footer{
 }
 .body_index{
     height:100vh;
-    @include display_grid(8%, 200%, 20%)
+    @include display_grid(8%, 200%, 20%);
 }
 .body_qs{
+    main{
+        div{
+            @include align(center);
+            img{
+                width: 15em;
+                height: 15em;
+                border-radius: 150px;
+                padding:30px;
+            }
+        }
+    }
+    
     height: 100vh;
-    display: grid;
-    @include display_grid(8%, 430%, 20%)
+    @include display_grid(8%, 530%, 20%);
 }
 @media screen and (min-width:600px){
     .body_index{
-        height: 200vh;
-        grid-template-columns: 4% 110% 10%;
+        grid-template-rows: 4% 330% 20%;
     }
     .body_qs{
-        img{
-            width:25em;
-            height: 25em;
-            border-radius: 80px;
+        main{
+            div{
+                img{
+                    width:25em;
+                    height: 25em;
+                    border-radius: 200px;
+                }
+            }
         }
+        grid-template-rows: 8% 750% 19%;
     }
     .img_portfolio{
         div{
@@ -65,28 +79,25 @@ footer{
         font-size: $medium;
     }
     .sectionInd{
-        h2{
-            margin:30px;
-            font-size: $medium2;
+        article{
+            h2{
+                margin:30px;
+                font-size: $normal;
+            }
+            a{
+                font-size: $small;
+            }
         }
-        a{
-            font-size: $medium2;
-
-        }
-    }
-    .body_qs{
-        img{
-            width: 18em;
-            height: 18em;
-            border-radius: 190px;
-        }
-        grid-template-rows: 8% 480% 19%;
+        
     }
     .footer{
-        @include display_grid(0,0,0);
-        @include align(center);
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        section{
+            @include align(center);
+        }
+        
     }
     .redes_block{
         margin-bottom: 20px;
@@ -100,13 +111,23 @@ footer{
         justify-content: center;
         align-self:auto;
     }
+    .resume_main{
+        padding-left: 2em;
+        padding-right: 2em;
+        margin: 30px;
+        border-radius: 40px;
+    }
 }
 @media screen and (min-width:1240px){
-    .img_portfolio div img{
-        @include align(center);
-        width: 15em;
-        height: 15em;
-        margin-left: 20px;
+    .img_portfolio{
+        div{
+            img{
+                width: 15em;
+                height: 15em;
+                margin-left: 20px;
+            }
+        }
+        
     }
     .title{
         font-size: $biggest;
@@ -125,11 +146,29 @@ footer{
         }
     }
     .body_qs{
-        img{
-            width: 20em;
-            height: 20em;
-            border-radius: 200px;
+        main{
+            div{
+                img{
+                    width: 30em;
+                    height: 30em;
+                    border-radius: 300px;
+                }
+            }
         }
-        grid-template-rows: 8% 400% 19%;
+        grid-template-rows: 8% 550% 19%;
+    }
+    .body_index{
+        height: 200vh;
+        grid-template-columns: 4% 100% 10%;
+    }
+    .resume_main{
+        padding: 4em;
+
+        margin: 50px;
+        border-radius: 80px;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }

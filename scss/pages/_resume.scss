@@ -18,9 +18,16 @@
                     font-size: $smaller;
                 }
                 section{
-                    font-size: $normal;
+                    font-size: $small;
                 }
             }
         }
     }
+    background-color: $celeste-secundario;
+    color:$blanco;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 30px;
+    text-align: left;
+    border-radius: 20px;
 }

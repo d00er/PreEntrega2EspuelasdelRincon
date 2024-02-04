@@ -5,18 +5,19 @@
 
 .button_bootstrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: right;
   text-align: right;
   align-items: right;
 }
 
+.color_gold {
+  color: #1282A2;
+}
+
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 
 .main_portfolio {
@@ -26,13 +27,11 @@
 }
 
 .title {
-  justify-content: center;
   text-align: center;
-  align-items: center;
   color: #88BFCF;
-  margin-top: 50px;
   font-weight: bold;
   font-size: 4em;
+  margin-top: 50px;
 }
 
 .redes_block {
@@ -59,30 +58,26 @@ footer section h5 {
   font-size: 1em;
 }
 
-.logo_img {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 15em;
-  height: 15em;
-  border-radius: 150px;
-  padding: 30px;
-}
-
 .sectionInd article {
   font-size: 2em;
+  text-align: center;
+  margin: 20px;
 }
 .sectionInd article h2 {
   font-weight: bold;
   color: #88BFCF;
+  margin: 10px;
 }
 .sectionInd article a {
   text-decoration: none;
+  margin-top: 30px;
 }
 
 .parrafo {
+  margin: 20px;
+  text-align: center;
   font-size: 1.5em;
-  padding: 25px;
+  padding: 20px;
   color: #FEFCFB;
 }
 .parrafo span {
@@ -114,6 +109,7 @@ footer section h5 {
   border-radius: 20px;
   padding-left: 20px;
   padding-bottom: 30px;
+  margin: 30px;
 }
 .contact_form div label {
   font-size: 1.5em;
@@ -137,6 +133,15 @@ footer section h5 {
   font-size: 2em;
 }
 
+.resume_main {
+  background-color: #1282A2;
+  color: #FEFCFB;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 30px;
+  text-align: left;
+  border-radius: 20px;
+}
 .resume_main section h2 {
   font-size: 3.5em;
 }
@@ -145,7 +150,7 @@ footer section h5 {
   font-size: 1em;
 }
 .resume_main section ul li section {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .main_portfolio {
@@ -155,9 +160,6 @@ footer section h5 {
 }
 
 .img_portfolio div img {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   width: 11em;
   height: 11em;
   margin: 10px;
@@ -186,13 +188,13 @@ footer section h5 {
   margin: 10px;
 }
 .accordeon_items div {
+  border: 2px #0A1128 solid;
   color: #FEFCFB;
   background-color: #001F54;
 }
 .accordeon_items div div {
   color: #FEFCFB;
   background-color: #001F54;
-  border-color: #0A1128;
 }
 .accordeon_items div h2 {
   color: #FEFCFB;
@@ -202,6 +204,7 @@ footer section h5 {
   color: #FEFCFB;
   background-color: #001F54;
   border-color: #0A1128;
+  border: 2px #0A1128 solid;
 }
 .accordeon_items div button:active {
   color: #FEFCFB;
@@ -240,21 +243,33 @@ footer {
 .body_qs {
   height: 100vh;
   display: grid;
-  display: grid;
-  grid-template-rows: 8% 430% 20%;
+  grid-template-rows: 8% 530% 20%;
   /*estructura con areas*/
   grid-template-areas: "header header" "main main" "footer footer";
+}
+.body_qs main div {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.body_qs main div img {
+  width: 15em;
+  height: 15em;
+  border-radius: 150px;
+  padding: 30px;
 }
 
 @media screen and (min-width: 600px) {
   .body_index {
-    height: 200vh;
-    grid-template-columns: 4% 110% 10%;
+    grid-template-rows: 4% 330% 20%;
   }
-  .body_qs img {
+  .body_qs {
+    grid-template-rows: 8% 750% 19%;
+  }
+  .body_qs main div img {
     width: 25em;
     height: 25em;
-    border-radius: 80px;
+    border-radius: 200px;
   }
   .img_portfolio div img {
     width: 12em;
@@ -267,31 +282,22 @@ footer {
     padding: 50px;
     font-size: 2em;
   }
-  .sectionInd h2 {
+  .sectionInd article h2 {
     margin: 30px;
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
-  .sectionInd a {
-    font-size: 2.5em;
-  }
-  .body_qs {
-    grid-template-rows: 8% 480% 19%;
-  }
-  .body_qs img {
-    width: 18em;
-    height: 18em;
-    border-radius: 190px;
+  .sectionInd article a {
+    font-size: 1.2em;
   }
   .footer {
     display: grid;
-    grid-template-rows: 0 0 0;
-    /*estructura con areas*/
-    grid-template-areas: "header header" "main main" "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer section {
     justify-content: center;
     text-align: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
   }
   .redes_block {
     margin-bottom: 20px;
@@ -306,12 +312,15 @@ footer {
     justify-content: center;
     align-self: auto;
   }
+  .resume_main {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 30px;
+    border-radius: 40px;
+  }
 }
 @media screen and (min-width: 1240px) {
   .img_portfolio div img {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     width: 15em;
     height: 15em;
     margin-left: 20px;
@@ -331,12 +340,25 @@ footer {
     font-size: 3em;
   }
   .body_qs {
-    grid-template-rows: 8% 400% 19%;
+    grid-template-rows: 8% 550% 19%;
   }
-  .body_qs img {
-    width: 20em;
-    height: 20em;
-    border-radius: 200px;
+  .body_qs main div img {
+    width: 30em;
+    height: 30em;
+    border-radius: 300px;
+  }
+  .body_index {
+    height: 200vh;
+    grid-template-columns: 4% 100% 10%;
+  }
+  .resume_main {
+    padding: 4em;
+    margin: 50px;
+    border-radius: 80px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
 

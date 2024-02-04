@@ -3,18 +3,24 @@
 .sectionInd{
     article{
         font-size: $medium;
+        text-align:center;
         h2{
             font-weight: bold;
             color: $celeste-primario;
+            margin:10px;
         }
         a{
             text-decoration: none;
+            margin-top: 30px;
         }
+        margin:20px;
     }
 }
 .parrafo{
+    margin: 20px;
+    text-align: center;
     font-size:$normal;
-    padding: 25px;
+    padding: 20px;
     color: $blanco;
     span{
         font-size: $small;

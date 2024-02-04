@@ -5,6 +5,9 @@
     color: $celeste-secundario;
 }
 .button_bootstrap{
-    @include display_flex(row);
+    @include display_flex(column);
     @include align(right);
+}
+.color_gold{
+    color: $celeste-secundario;
 }
