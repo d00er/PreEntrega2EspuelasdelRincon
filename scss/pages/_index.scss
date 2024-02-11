@@ -1,23 +1,36 @@
 @import "../base/variables";
 
-.sectionInd{
-    article{
+.section_ind{
+    font-size: $small;
+    text-align:center;
+    h2{
+        font-weight: bold;
+        color: $celeste-primario;
+        margin:10px;
         font-size: $medium;
-        text-align:center;
-        h2{
-            font-weight: bold;
-            color: $celeste-primario;
-            margin:10px;
-        }
+    }
+    button{
         a{
             text-decoration: none;
-            margin-top: 30px;
+            color:$blanco;
         }
-        margin:20px;
+        margin-top: 30px;
+        background-image: linear-gradient($azul-secundario, $negro);
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 4px 4px black;
+        border-width: 0px;
+        transition: 0.2s;
+
     }
+    
+    button:hover{
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+    margin:20px;
 }
 .parrafo{
-    margin: 20px;
     text-align: center;
     font-size:$normal;
     padding: 20px;

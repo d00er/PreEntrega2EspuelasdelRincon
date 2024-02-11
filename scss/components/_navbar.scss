@@ -1,13 +1,17 @@
 @import "../base/variables";
 
 .nav_bar{
-    background-color: $azul-secundario;
+    background-image: linear-gradient(to left, $azul-secundario,  #012f49);
     color: $celeste-secundario;
 }
 .button_bootstrap{
     @include display_flex(column);
     @include align(right);
 }
-.color_gold{
+.color{
     color: $celeste-secundario;
+}
+.is_active{
+    color: $celeste-primario;
+    text-decoration:overline;
 }

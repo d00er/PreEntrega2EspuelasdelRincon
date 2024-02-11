@@ -1,5 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .nav_bar {
-  background-color: #001F54;
+  background-image: linear-gradient(to left, #00263C, #012f49);
   color: #1282A2;
 }
 
@@ -11,8 +17,13 @@
   align-items: right;
 }
 
-.color_gold {
+.color {
   color: #1282A2;
+}
+
+.is_active {
+  color: #88BFCF;
+  text-decoration: overline;
 }
 
 .main {
@@ -43,6 +54,8 @@
 .redes_block a img {
   width: 40px;
   height: 40px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 footer {
@@ -52,29 +65,52 @@ footer {
   text-align: center;
   align-items: center;
 }
-footer section h5 {
+footer div h2 {
+  color: #FEFCFB;
+  padding: 10px;
+  font-size: 1em;
+}
+footer div h3 {
   color: #FEFCFB;
   padding: 10px;
   font-size: 1em;
 }
 
-.sectionInd article {
-  font-size: 2em;
+.redes_block a img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.section_ind {
+  font-size: 1.2em;
   text-align: center;
   margin: 20px;
 }
-.sectionInd article h2 {
+.section_ind h2 {
   font-weight: bold;
   color: #88BFCF;
   margin: 10px;
+  font-size: 2em;
 }
-.sectionInd article a {
-  text-decoration: none;
+.section_ind button {
   margin-top: 30px;
+  background-image: linear-gradient(#00263C, #001b24);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px black;
+  border-width: 0px;
+  transition: 0.2s;
+}
+.section_ind button a {
+  text-decoration: none;
+  color: #FEFCFB;
+}
+.section_ind button:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 
 .parrafo {
-  margin: 20px;
   text-align: center;
   font-size: 1.5em;
   padding: 20px;
@@ -84,10 +120,6 @@ footer section h5 {
   font-size: 1.2em;
   font-weight: bold;
   color: #88BFCF;
-}
-
-.contact_index {
-  padding-bottom: 40;
 }
 
 .contact_title {
@@ -110,20 +142,55 @@ footer section h5 {
   padding-left: 20px;
   padding-bottom: 30px;
   margin: 30px;
+  background-image: linear-gradient(to left, #1282A2, #199dc2);
 }
 .contact_form div label {
   font-size: 1.5em;
+  font-weight: bold;
 }
 .contact_form textarea {
-  margin-top: 20px;
   margin-bottom: 20px;
-  width: 90%;
+  width: 95%;
 }
 
 .input_form input {
-  width: 90%;
+  width: 95%;
   padding-right: 50px;
   height: 40px;
+}
+
+.button_input_1 {
+  background-image: linear-gradient(#00263C, #001b24);
+  box-shadow: 4px 4px black;
+  border-width: 0px;
+  color: #FEFCFB;
+  margin-right: 30px;
+  transition: 0.2s;
+}
+
+.button_input_2 {
+  background-image: linear-gradient(rgb(231, 55, 55), rgb(156, 37, 37));
+  box-shadow: 4px 4px rgb(78, 21, 21);
+  border-width: 0px;
+  color: #FEFCFB;
+  margin-right: 30px;
+  transition: 0.2s;
+}
+
+.button_input_1:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.button_input_2:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.button_inputs {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .resume_list {
@@ -133,8 +200,22 @@ footer section h5 {
   font-size: 2em;
 }
 
+.resume_list_software {
+  list-style: none;
+}
+.resume_list_software li {
+  font-size: 2em;
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.resume_list_software li img {
+  width: 50px;
+  height: 50px;
+}
+
 .resume_main {
-  background-color: #1282A2;
+  background-image: linear-gradient(to left, #1282A2, #1aafd8);
   color: #FEFCFB;
   padding-left: 1em;
   padding-right: 1em;
@@ -145,9 +226,9 @@ footer section h5 {
 .resume_main section h2 {
   font-size: 3.5em;
 }
-.resume_main section ul li div {
+.resume_main section ul li div ul li {
   font-weight: light;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 .resume_main section ul li section {
   font-size: 1.2em;
@@ -156,7 +237,6 @@ footer section h5 {
 .main_portfolio {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .img_portfolio div img {
@@ -173,69 +253,67 @@ footer section h5 {
 .cards_port {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   gap: 1em;
   margin: 10px;
 }
+.cards_port div {
+  border: 4px #001b24 solid;
+}
 .cards_port div div {
-  background-color: #001F54;
+  background-color: #00263C;
   color: #FEFCFB;
 }
 
 .accordeon_items {
+  width: 95%;
   margin: 10px;
 }
 .accordeon_items div {
-  border: 2px #0A1128 solid;
+  border: none;
   color: #FEFCFB;
-  background-color: #001F54;
+  background-color: #00263C;
 }
 .accordeon_items div div {
   color: #FEFCFB;
-  background-color: #001F54;
+  background-color: #00263C;
 }
 .accordeon_items div h2 {
   color: #FEFCFB;
-  background-color: #001F54;
+  background-color: #00263C;
 }
 .accordeon_items div button {
   color: #FEFCFB;
-  background-color: #001F54;
-  border-color: #0A1128;
-  border: 2px #0A1128 solid;
+  background-color: #00263C;
+  border-color: #001b24;
+  border: 2px #001b24 solid;
 }
 .accordeon_items div button:active {
   color: #FEFCFB;
-  background-color: #034078;
+  background-color: #003459;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.title_card {
+  font-size: 1.5em;
 }
 
 header {
-  background-color: #001F54;
+  background-image: linear-gradient(to left, #00263C, #004570);
   grid-area: header;
 }
 
 main {
-  background-color: #034078;
+  background-image: linear-gradient(to left, #003459, #005491);
   grid-area: main;
 }
 
 footer {
-  background-color: #0A1128;
+  background-image: linear-gradient(to left, #001b24, #001a22);
   grid-area: footer;
 }
 
 .body_index {
-  height: 100vh;
   display: grid;
-  grid-template-rows: 8% 200% 20%;
+  grid-template-rows: 0.5fr 20fr 2fr;
   /*estructura con areas*/
   grid-template-areas: "header header" "main main" "footer footer";
 }
@@ -243,7 +321,7 @@ footer {
 .body_qs {
   height: 100vh;
   display: grid;
-  grid-template-rows: 8% 530% 20%;
+  grid-template-rows: 1fr 20fr 2fr;
   /*estructura con areas*/
   grid-template-areas: "header header" "main main" "footer footer";
 }
@@ -261,10 +339,7 @@ footer {
 
 @media screen and (min-width: 600px) {
   .body_index {
-    grid-template-rows: 4% 330% 20%;
-  }
-  .body_qs {
-    grid-template-rows: 8% 750% 19%;
+    grid-template-rows: 0.3fr 9fr 0.7fr;
   }
   .body_qs main div img {
     width: 25em;
@@ -278,15 +353,18 @@ footer {
   .title {
     font-size: 5em;
   }
+  .contact_title {
+    font-size: 5em;
+  }
   .parrafo {
-    padding: 50px;
+    padding: 3em;
     font-size: 2em;
   }
-  .sectionInd article h2 {
-    margin: 30px;
+  .section_ind h2 {
+    margin: 2em;
     font-size: 1.5em;
   }
-  .sectionInd article a {
+  .section_ind a {
     font-size: 1.2em;
   }
   .footer {
@@ -294,7 +372,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .footer section {
+  .footer div {
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -304,19 +382,17 @@ footer {
     margin-top: 20px;
   }
   .cards_port {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row;
-    gap: 1em;
-    margin: 10px;
-    justify-content: center;
-    align-self: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .resume_main {
     padding-left: 2em;
     padding-right: 2em;
     margin: 30px;
     border-radius: 40px;
+  }
+  .button_inputs {
+    transform: scale(1.3);
   }
 }
 @media screen and (min-width: 1240px) {
@@ -328,28 +404,24 @@ footer {
   .title {
     font-size: 7em;
   }
+  .contact_title {
+    font-size: 7em;
+  }
   .parrafo {
     font-size: 2em;
     padding: 80px;
   }
-  .sectionInd h2 {
+  .section_nd h2 {
     font-size: 3em;
     margin: 50px;
   }
-  .sectionInd a {
+  .section_nd a {
     font-size: 3em;
-  }
-  .body_qs {
-    grid-template-rows: 8% 550% 19%;
   }
   .body_qs main div img {
     width: 30em;
     height: 30em;
     border-radius: 300px;
-  }
-  .body_index {
-    height: 200vh;
-    grid-template-columns: 4% 100% 10%;
   }
   .resume_main {
     padding: 4em;
@@ -359,6 +431,15 @@ footer {
   .footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+  .cards_port {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .body_index {
+    grid-template-rows: 0.3fr 9fr 1fr;
+  }
+  .button_inputs {
+    transform: scale(1.4);
   }
 }
 

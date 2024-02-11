@@ -2,7 +2,7 @@
 
 .main_portfolio{
     @include display_flex(column);
-    gap: 15px;
+    
 }
 .img_portfolio{
     div{
@@ -12,6 +12,7 @@
             margin: 10px;
         }
     }
+    
 }
 .img_carousel{
     width:1000px;
@@ -19,17 +20,21 @@
 }
 .cards_port{
     @include display_flex(column);
-    @include align(center);
+
     div{
         div{
             background-color: $azul-secundario;
             color: $blanco;
         }
+        border: 4px $negro solid;
     }
     gap: $smaller;
     margin: 10px;
+    
 }
+    
 .accordeon_items{
+    width:95%;
     div{
         div{
             color:$blanco;
@@ -52,9 +57,13 @@
             color:$blanco;
             background-color: $azul-primario;
         }
-        border: 2px $negro solid;
+        border: none;
+    
         color:$blanco;
         background-color: $azul-secundario;
     }   
     margin:10px;
     }
+.title_card{
+    font-size: $normal;
+}

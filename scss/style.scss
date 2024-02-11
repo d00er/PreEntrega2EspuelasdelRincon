@@ -1,3 +1,4 @@
+@import "base/reset";
 @import "components/navbar";
 @import "components/main";
 @import "components/footer";
@@ -8,27 +9,22 @@
 @import "pages/portfolio";
 
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 header{
-    background-color: #001F54;
+    background-image: linear-gradient(to left, $azul-secundario,  #004570);
     grid-area: header;
 }
 main{
-    background-color: #034078;
+    background-image: linear-gradient(to left, $azul-primario,  #005491);
     grid-area: main;
 }
 footer{
-    background-color: #0A1128;
+    background-image: linear-gradient(to left, $negro, #001a22);
     grid-area: footer;
 }
 .body_index{
-    height:100vh;
-    @include display_grid(8%, 200%, 20%);
+    @include display_grid(0.5fr, 20fr, 2fr);
 }
 .body_qs{
     main{
@@ -44,11 +40,11 @@ footer{
     }
     
     height: 100vh;
-    @include display_grid(8%, 530%, 20%);
+    @include display_grid(1fr, 20fr, 2fr);
 }
 @media screen and (min-width:600px){
     .body_index{
-        grid-template-rows: 4% 330% 20%;
+        grid-template-rows: 0.3fr 9fr 0.7fr;
     }
     .body_qs{
         main{
@@ -60,7 +56,7 @@ footer{
                 }
             }
         }
-        grid-template-rows: 8% 750% 19%;
+        
     }
     .img_portfolio{
         div{
@@ -72,29 +68,29 @@ footer{
         
     }
     .title{
-        font-size: $BIGGER2;
+        font-size: $bigger2;
+    }
+    .contact_title{
+        font-size:$bigger2;
     }
     .parrafo{
-        padding:50px;
+        padding:3em;
         font-size: $medium;
     }
-    .sectionInd{
-        article{
-            h2{
-                margin:30px;
-                font-size: $normal;
-            }
-            a{
-                font-size: $small;
-            }
+    .section_ind{
+        h2{
+            margin:2em;
+            font-size: $normal;
         }
-        
+        a{
+            font-size: $small;
+        }
     }
     .footer{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        section{
+        div{
             @include align(center);
         }
         
@@ -104,12 +100,10 @@ footer{
         margin-top: 20px;
     }
     .cards_port{
-        @include display_flex(row);
-        flex-direction: row;
-        gap: 1em;
-        margin: 10px;
-        justify-content: center;
-        align-self:auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+    
     }
     .resume_main{
         padding-left: 2em;
@@ -117,6 +111,9 @@ footer{
         margin: 30px;
         border-radius: 40px;
     }
+    .button_inputs{
+        transform: scale(1.3);
+    }  
 }
 @media screen and (min-width:1240px){
     .img_portfolio{
@@ -132,11 +129,14 @@ footer{
     .title{
         font-size: $biggest;
     }
+    .contact_title{
+        font-size:$biggest;
+    }
     .parrafo{
         font-size: $medium;
         padding: 80px;
     }
-    .sectionInd{
+    .section_nd{
         h2{
             font-size: $high;
             margin: 50px;
@@ -155,11 +155,7 @@ footer{
                 }
             }
         }
-        grid-template-rows: 8% 550% 19%;
-    }
-    .body_index{
-        height: 200vh;
-        grid-template-columns: 4% 100% 10%;
+        
     }
     .resume_main{
         padding: 4em;
@@ -171,4 +167,13 @@ footer{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+    .cards_port{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .body_index{
+        grid-template-rows: 0.3fr 9fr 1fr;
+    }
+    .button_inputs{
+        transform: scale(1.4);
+    }  
 }

@@ -1,8 +1,6 @@
 @import "../base/variables";
 
-.contact_index{
-    padding-bottom: 40;
-}
+
 .contact_title{
     @include align(center);
     margin-top: 50px;
@@ -14,12 +12,13 @@
     div{
         label{
             font-size: $normal;
+            font-weight: bold;
         }
     }
     textarea{
-        margin-top: 20px;
+        
         margin-bottom: 20px;
-        width: 90%;
+        width: 95%;
     }
     @include align(left);
     background-color: $celeste-secundario;
@@ -28,13 +27,41 @@
     padding-left:20px;
     padding-bottom: 30px;
     margin: 30px;
+    background-image: linear-gradient(to left, $celeste-secundario, #199dc2);
 
 }
 
 .input_form{
     input{
-        width: 90%;
+        width: 95%;
         padding-right: 50px;
         height: 40px;
     }
 }
+.button_input_1{
+    background-image: linear-gradient($azul-secundario, $negro);
+    box-shadow: 4px 4px black;
+    border-width: 0px;
+    color: $blanco;
+    margin-right: 30px;
+    transition: 0.2s;
+}
+.button_input_2{
+    background-image: linear-gradient(rgb(231, 55, 55), rgb(156, 37, 37));
+    box-shadow: 4px 4px rgb(78, 21, 21);
+    border-width: 0px;
+    color: $blanco;
+    margin-right: 30px;
+    transition: 0.2s;
+}
+.button_input_1:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.button_input_2:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.button_inputs{
+    @include align(center)
+}    

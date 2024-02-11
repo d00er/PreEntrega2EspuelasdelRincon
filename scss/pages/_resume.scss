@@ -2,11 +2,24 @@
 
 .resume_list{
     li{
-        font-size: $medium
+        font-size: $medium;
+    }
+    list-style: none;
+}
+.resume_list_software{
+    li{
+        font-size: $medium;
+        gap: 30px;
+        @include display_flex(row);
+        img{
+            width: 50px;
+            height: 50px;
+        }
     }
     list-style: none;
 }
 .resume_main{
+    
     section{
         h2{
             font-size: $big;
@@ -14,16 +27,22 @@
         ul{
             li{
                 div{
-                    font-weight:light;
-                    font-size: $smaller;
+                    ul{
+                        li{
+                            font-weight:light;
+                            font-size: $smallest;
+                        }
+                    }
+                    
                 }
                 section{
                     font-size: $small;
                 }
             }
+            
         }
     }
-    background-color: $celeste-secundario;
+    background-image: linear-gradient(to left,$celeste-secundario, #1aafd8);
     color:$blanco;
     padding-left: 1em;
     padding-right: 1em;
