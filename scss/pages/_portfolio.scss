@@ -14,10 +14,7 @@
     }
     
 }
-.img_carousel{
-    width:1000px;
-    height:1000px;
-}
+
 .cards_port{
     @include display_flex(column);
 
@@ -66,4 +63,8 @@
     }
 .title_card{
     font-size: $normal;
+}
+.certificado_sig{
+    width: 1em;
+    height: 11em;
 }

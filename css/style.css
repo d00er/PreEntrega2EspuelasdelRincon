@@ -245,11 +245,6 @@ footer div h3 {
   margin: 10px;
 }
 
-.img_carousel {
-  width: 1000px;
-  height: 1000px;
-}
-
 .cards_port {
   display: flex;
   flex-direction: column;
@@ -294,6 +289,11 @@ footer div h3 {
 
 .title_card {
   font-size: 1.5em;
+}
+
+.certificado_sig {
+  width: 1em;
+  height: 11em;
 }
 
 header {
