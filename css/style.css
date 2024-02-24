@@ -243,7 +243,7 @@ footer div h3 {
   border-radius: 20px;
 }
 .resume_main section h2 {
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 .resume_main section ul li div ul li {
   font-weight: light;
@@ -464,10 +464,6 @@ footer {
   }
   .button_inputs {
     transform: scale(1.4);
-  }
-  .redes_block a img {
-    width: 50px;
-    height: 50px;
   }
   .libr_pages {
     grid-column: span 2;
