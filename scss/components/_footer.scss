@@ -6,16 +6,16 @@
     margin-bottom: 20px;
     a{
         img{
-            width: 40px;
-            height:40px;
+            width: 30px;
+            height:30px;
             transition: 0.3s;
-            cursor: pointer;
         }
     }
 }
 footer{
     @include display_flex(column);
     @include align(center);
+    gap: 20px;
     div{
         h2{
             color:$blanco;
@@ -36,5 +36,21 @@ footer{
             transition: 0.3s;
         }
         
+    }
+}
+.libr_pages{
+    @include display_flex(row);
+    @include align(center);
+    font-size: $smallest;
+    gap: 10px;
+    padding-bottom: 20px;
+
+    a{
+        text-decoration: none;
+        color: #75a0da;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #597aa5;
     }
 }
