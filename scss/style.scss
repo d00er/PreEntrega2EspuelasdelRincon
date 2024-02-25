@@ -122,6 +122,11 @@ footer{
         padding-bottom:40px;
         gap: 30px;
     }
+    .resume_list{
+        li{
+            font-size: $medium;
+        }
+    }
 }
 @media screen and (min-width:1240px){
     .img_portfolio{

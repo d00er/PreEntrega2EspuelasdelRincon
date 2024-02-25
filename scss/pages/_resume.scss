@@ -2,9 +2,15 @@
 
 .resume_list{
     li{
-        font-size: $medium;
+        font-size: $normal;
+        padding-bottom: 30px;
     }
-    list-style: none;
+    div{
+        padding:20px;
+        li{
+            padding-bottom: 30px;
+        }
+    }
 }
 .resume_list_software{
     li{

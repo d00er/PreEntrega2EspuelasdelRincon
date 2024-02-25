@@ -212,11 +212,15 @@ footer div h3 {
   align-items: center;
 }
 
-.resume_list {
-  list-style: none;
-}
 .resume_list li {
-  font-size: 2em;
+  font-size: 1.5em;
+  padding-bottom: 30px;
+}
+.resume_list div {
+  padding: 20px;
+}
+.resume_list div li {
+  padding-bottom: 30px;
 }
 
 .resume_list_software {
@@ -416,6 +420,9 @@ footer {
     font-size: 1em;
     padding-bottom: 40px;
     gap: 30px;
+  }
+  .resume_list li {
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 1240px) {
